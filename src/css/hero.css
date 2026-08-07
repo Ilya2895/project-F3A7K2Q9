@@ -1,0 +1,100 @@
+.hero {
+  margin: 0 auto;
+  max-width: 375px;
+  background-color: lightgrey;
+  padding: 160px 0 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 375px auto;
+  background-image: url('../img/hero-background/1x-mobile.avif');
+}
+@media (min-resolution: 2x) {
+  .hero {
+    background-image: url('../img/hero-background/2x-mobile.avif');
+  }
+}
+.hero-content {
+  max-width: 375px;
+  width: 100%;
+}
+.hero-title {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 24px;
+  text-align: left;
+}
+.hero-text {
+  max-width: 335px;
+  color: white;
+  margin-bottom: 32px;
+}
+.hero-pseudo-button {
+  margin: 0;
+  display: block;
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  color: #000;
+  background-color: #ccc16e;
+  width: 100%;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  border: 1px solid #ccc16e;
+  padding: 6px 12px;
+  outline: none;
+  cursor: pointer;
+}
+
+.hero-pseudo-button:hover,
+.hero-pseudo-button:focus {
+  background-color: transparent;
+}
+
+/* tablet >= 768px */
+@media screen and (min-width: 768px) {
+  .hero-content {
+    max-width: 640px;
+    margin: 0 auto 0 0;
+  }
+  .hero {
+    max-width: 768px;
+    padding: 160px 0 435px;
+    background-image: url('../img/hero-background/1x-tab.avif');
+    background-size: 768px auto;
+  }
+  @media (min-resolution: 2x) {
+    .hero {
+      background-image: url('../img/hero-background/2x-tab.avif');
+    }
+  }
+  .hero-pseudo-button {
+    width: 217px;
+  }
+}
+
+/* desktop >= 1440px */
+@media screen and (min-width: 1440px) {
+  .hero {
+    max-width: 1440px;
+    padding: 224px 0 360px;
+    background-image: url('../img/hero-background/1x-lap.avif');
+    background-size: 1440px auto;
+  }
+  @media (min-resolution: 2x) {
+    .hero {
+      background-image: url('../img/hero-background/2x-lap.avif');
+    }
+  }
+  .hero-title {
+    font-size: 56px;
+  }
+  .hero-pseudo-button {
+    width: 217px;
+  }
+}
