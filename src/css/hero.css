@@ -1,101 +1,136 @@
 .hero {
-  margin: 0 auto;
-  max-width: 1440px;
-  background-color: lightgrey;
-  padding: 160px 0 152px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 375px auto;
-  background-image: url('../img/hero-background/1x-mobile.avif');
+width: 100%;
+max-width: 375px;
+min-height: 656px;
+margin: 0 auto;
+padding: 160px 20px 0;
+
+background-color: #808080;
+background-image: url('../img/hero-background/1x-mobile.avif');
+background-repeat: no-repeat;
+background-position: center;
+background-size: 375px 656px;
 }
-@media (min-resolution: 2x) {
-  .hero {
-    background-image: url('../img/hero-background/2x-mobile.avif');
-  }
-}
+
 .hero-content {
-  max-width: 375px;
-  width: 100%;
-  max-height: 344px;
+width: 100%;
+max-width: 335px;
 }
+
 .hero-title {
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
-  color: white;
-  margin-top: 0;
-  margin-bottom: 24px;
-  text-align: left;
+margin: 0 0 24px;
+
+font-weight: 400;
+font-size: 40px;
+line-height: 1.2;
+letter-spacing: -0.01em;
+color: #FFFFFF;
 }
+
 .hero-text {
-  max-width: 335px;
-  color: white;
-  margin-bottom: 32px;
+margin: 0 0 32px;
+
+font-size: 18px;
+line-height: 1.5;
+color: #FFFFFF;
 }
+
+
 .hero-pseudo-button {
-  margin: 0;
-  display: block;
-  padding: 6px 12px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: none;
-  color: #000;
-  background-color: #ccc16e;
-  width: 100%;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  border: 1px solid #ccc16e;
-  outline: none;
-  cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
+
+width: 100%;
+min-height: 36px;
+padding: 6px 12px;
+
+font-family: inherit;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+text-align: center;
+color: #000000;
+text-decoration: none;
+
+background-color: #CCC16E;
+border: 1px solid #CCC16E;
+cursor: pointer;
+
+transition:
+color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-pseudo-button:hover,
 .hero-pseudo-button:focus {
-  background-color: transparent;
+color: #000000;
+background-color: transparent;
+border-color: #CCC16E;
 }
 
-/* tablet >= 768px */
+/* Retina mobile */
+
+@media screen and (min-resolution: 2dppx) {
+.hero {background-image: url('../img/hero-background/2x-mobile.avif');
+}
+}
+
+/* Tablet */
+
 @media screen and (min-width: 768px) {
-  .hero {
-    max-width: 768px;
-    padding: 160px 0 435px;
-    background-image: url('../img/hero-background/1x-tab.avif');
-    background-size: 768px auto;
-  }
-  @media (min-resolution: 2x) {
-    .hero {
-      background-image: url('../img/hero-background/2x-tab.avif');
-    }
-  }
-  .hero-content {
-    max-width: 640px;
-    max-height: 269px;
-    margin: 0 auto 0 0;
-  }
-  .hero-pseudo-button {
-    width: 217px;
-  }
+.hero {
+max-width: 768px;
+min-height: 864px;
+padding: 160px 32px 0;
+
+background-image: url('../img/hero-background/1x-tab.avif');
+background-size: 768px 864px;
 }
 
-/* desktop >= 1440px */
+.hero-content {
+max-width: 513px;
+}
+
+.hero-pseudo-button {
+width: 217px;
+}
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 2dppx) {
+.hero {
+background-image: url('../img/hero-background/2x-tab.avif');
+}
+}
+
+/* Desktop */
+
 @media screen and (min-width: 1440px) {
-  .hero {
-    max-width: 1440px;
-    padding: 224px 0 360px;
-    background-image: url('../img/hero-background/1x-lap.avif');
-    background-size: 1440px auto;
-  }
-  @media (min-resolution: 2x) {
-    .hero {
-      background-image: url('../img/hero-background/2x-lap.avif');
-    }
-  }
-  .hero-content {
-    max-height: 280px;
-  }
-  .hero-title {
-    font-size: 56px;
-  }
+.hero {
+max-width: 1440px;
+min-height: 864px;
+padding: 224px 64px 0;
+
+background-image: url('../img/hero-background/1x-lap.avif');
+background-size: 1440px 864px;
+}
+
+.hero-content {
+max-width: 640px;
+}
+
+.hero-title {
+font-size: 56px;
+}
+
+.hero-pseudo-button {
+width: 192px;
+}
+}
+
+@media screen and (min-width: 1440px) and (min-resolution: 2dppx) {
+.hero {
+background-image: url('../img/hero-background/2x-lap.avif');
+}
 }
