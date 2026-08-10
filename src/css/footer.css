@@ -1,1 +1,144 @@
-/* Footer styles */
+.footer {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.footer-main {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  margin-bottom: 24px;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.footer-logo {
+  display: inline-flex;
+  color: #000000;
+}
+
+.footer-logo-icon {
+  width: 217px;
+  height: 93px;
+}
+
+.footer-social-list {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+
+  color: #000000;
+}
+
+.footer-social-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.footer-nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.footer-nav-link {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer-nav-link:hover,
+.footer-nav-link:focus {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.footer-logo:focus-visible,
+.footer-social-link:focus-visible,
+.footer-nav-link:focus-visible {
+  outline: 2px solid #000000;
+  outline-offset: 2px;
+}
+
+
+
+.footer-copyright {
+  padding-top: 32px;
+  border-top: 1px solid #d9d9d9;
+
+  font-size: 14px;
+  line-height: 1.5;
+  color: #000000;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+ .footer .container {
+    padding: 0 64px;
+  }
+
+  .footer-logo-icon {
+    width: 341px;
+    height: 146px;
+  }
+
+  .footer-nav-link {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+
+@media screen and (min-width: 1440px) {
+  
+.footer-main {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 64px;
+    margin-bottom: 24px;
+  }
+
+  .footer-brand {
+    align-items: flex-start;
+    width: 342px;
+  }
+
+  .footer-logo-icon {
+    width: 84px;
+    height: 36px;
+  }
+
+  .footer-social-link {
+    width: 24px;
+    height: 24px;
+  }
+
+  .footer-social-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .footer-nav {
+    width: 303px;
+  }
+
+  .footer-nav-list {
+    align-items: flex-start;
+  }
+}
