@@ -1,0 +1,122 @@
+.about {
+    padding-top: 56px;
+    padding-bottom: 56px;
+    width: 100%;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 32px;
+}
+
+.about-img {
+    object-fit: cover;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.about-title {
+    color: #000000;
+    font-size: 36px;
+}
+
+.about-description {
+    color: #333333;
+    font-size: 18px;
+    line-height: 1.5;  
+}
+
+.about-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-item {
+    color: #000000;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    gap: 8px;
+}
+
+.about-item-icon {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 0;
+    flex-shrink: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .about {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 80px;
+        padding: 112px 32px;
+    }
+
+    .about-container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .about-wrapper {
+        gap: 32px;
+        flex-basis: calc((100% - 32px) / 2);
+    }
+
+    .about-content {
+        gap: 24px;
+        flex-basis: calc((100% - 32px) / 2);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .about {
+        gap: 80px;
+        padding: 112px 64px;
+    }
+
+    .about-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+        gap: 32px;
+    }
+
+    .about-wrapper {
+        gap: 32px;
+        flex-basis: calc((100% - 80px) / 2);
+    }
+
+    .about-content {
+        gap: 24px;
+        flex-basis: calc((100% - 80px) / 2);
+    }
+
+    .about-title {
+        font-size: 48px;
+    }
+
+    .about-description {
+        font-size: 18px;
+    }
+
+    .about-item {
+        gap: 8px;
+    }
+}
