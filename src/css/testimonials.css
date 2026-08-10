@@ -28,7 +28,8 @@
 
 @media only screen and (min-width: 768px) {
     .testimonials-header {
-        width: 768px;
+        width: 100%;
+        max-width: 768px;
     }
 }
 
@@ -78,6 +79,8 @@
 
 @media only screen and (min-width: 1440px) {
     .testimonials-list {
+        gap: 32px;
+
         width: 1312px;
     }
 }
@@ -186,6 +189,8 @@ START OF CARDS BLOCK
     }
 
     .testimonial-item.card {
+        gap: 43px;
+
         width: 250px;
     }
 }
@@ -200,6 +205,8 @@ START OF CARDS BLOCK
     }
 
     .testimonial-item.card {
+        gap: 97px;
+
         width: 640px;
     }
 }
@@ -218,7 +225,7 @@ END OF CARDS BLOCK
 
     width: 271px;
 
-    margin-bottom: auto;
+    /* margin-bottom: auto; */
 }
 
 @media only screen and (min-width: 768px) {
