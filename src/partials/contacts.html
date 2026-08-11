@@ -1,9 +1,107 @@
-<section class="contacts section" id="contacts">
-  <div class="container">
-    <p class="contacts-subtitle">Connect</p>
+<section class="section contacts-section" id="contacts">
+  <div class="container contacts-container">
+    <div class="contacts-header">
+      <p class="contacts-subtitle">Connect</p>
+      <h2 class="contacts-title">Order your unique jewelry</h2>
+      <p class="contacts-description">
+        We'd love to hear more details from you!
+      </p>
+    </div>
 
-    <h2 class="contacts-title">Order your unique jewelry</h2>
+    <div class="contacts-content">
+      <ul class="contacts-list">
+        <li class="contacts-item contacts-item--email">
+          <a href="mailto:info@handmadejewelry.com" class="contacts-link">
+            <span class="contacts-icon-wrapper">
+              <svg class="contacts-icon" width="20" height="20">
+                <use href="./img/icons.svg#envelope"></use>
+              </svg>
+            </span>
+            <div class="contacts-text-group">
+              <span class="contacts-type">Email</span>
+              <span class="contacts-value">info@handmadejewelry.com</span>
+            </div>
+          </a>
+        </li>
 
-    <!-- Contacts content. The form must have id="contacts-form" -->
+        <li class="contacts-item contacts-item--phone">
+          <a href="tel:+15550000000" class="contacts-link">
+            <span class="contacts-icon-wrapper">
+              <svg class="contacts-icon" width="20" height="20">
+                <use href="./img/icons.svg#phone"></use>
+              </svg>
+            </span>
+            <div class="contacts-text-group">
+              <span class="contacts-type">Phone</span>
+              <span class="contacts-value">+1 (555) 000-0000</span>
+            </div>
+          </a>
+        </li>
+
+        <li class="contacts-item contacts-item--office">
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=76-8+Oakington+Manor+Dr,+London,+UK"
+            class="contacts-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="contacts-icon-wrapper">
+              <svg class="contacts-icon" width="20" height="20">
+                <use href="./img/icons.svg#map"></use>
+              </svg>
+            </span>
+            <div class="contacts-text-group">
+              <span class="contacts-type">Office</span>
+              <span class="contacts-value"
+                >76-8 Oakington Manor Dr, London, UK</span
+              >
+            </div>
+          </a>
+        </li>
+      </ul>
+
+      <form class="contacts-form" name="order_form" autocomplete="off">
+        <div class="contacts-form-field">
+          <label for="user-name" class="contacts-form-label">Name*</label>
+          <input
+            type="text"
+            id="user-name"
+            name="user_name"
+            class="contacts-form-input"
+            placeholder="Tony"
+            pattern="^[a-zA-Z\s\.]{5,28}$"
+            required
+          />
+        </div>
+
+        <div class="contacts-form-field">
+          <label for="user-phone" class="contacts-form-label">Phone*</label>
+          <input
+            type="tel"
+            id="user-phone"
+            name="user_phone"
+            class="contacts-form-input"
+            placeholder="+1 234 567 8900"
+            pattern="^\+[0-9\s]{14}$"
+            required
+          />
+        </div>
+
+        <div class="contacts-form-field">
+          <label for="user-comment" class="contacts-form-label"
+            >Describe what you want</label
+          >
+          <textarea
+            id="user-comment"
+            name="user_comment"
+            class="contacts-form-textarea"
+            placeholder="Type your message..."
+            maxlength="500"
+          ></textarea>
+        </div>
+
+        <button type="submit" class="contacts-form-btn">Submit</button>
+      </form>
+    </div>
   </div>
 </section>
