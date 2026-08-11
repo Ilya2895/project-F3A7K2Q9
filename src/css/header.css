@@ -19,12 +19,6 @@ header-nav-link{
   font-size: 16px; 
   line-height: 1.5;
 }
-.header-nav-link:hover,
-.header-nav-link:focus {
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
 .header-order-btn {
   display: block;
   padding: 6px 12px;

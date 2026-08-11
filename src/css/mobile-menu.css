@@ -113,11 +113,6 @@ body.menu-open {
   border: 1px solid #ccc16e;
 }
 
-.mobile-menu-link:hover,
-.mobile-menu-link:focus {
-  text-decoration: underline;
-}
-
 .mobile-menu-close:hover,
 .mobile-menu-close:focus {
   opacity: 0.6;
