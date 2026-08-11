@@ -10,6 +10,10 @@ body {
   background-color: #ffffff;
 }
 
+:root {
+  --link-animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 h1,
 h2,
 h3,
@@ -29,4 +33,34 @@ input,
 textarea,
 select {
   font: inherit;
+}
+
+.animated-link {
+  position: relative;
+  display: inline-block;
+}
+
+.animated-link::after {
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  left: 0;
+  height: 1px;
+  background-color: currentColor;
+  content: '';
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform var(--link-animation);
+}
+
+.animated-link:hover::after,
+.animated-link:focus-visible::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animated-link::after {
+    transition: none;
+  }
 }
