@@ -22,7 +22,7 @@
       referrerpolicy="no-referrer"
     />
     <script type="module" crossorigin src="/project-F3A7K2Q9/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-F3A7K2Q9/assets/index-B4SC10Nq.css">
+    <link rel="stylesheet" crossorigin href="/project-F3A7K2Q9/assets/index-BH6toNSS.css">
   </head>
 
   <body>
@@ -294,15 +294,142 @@
     </div>
   </div>
 </section>
-      <section class="contacts section" id="contacts">
-  <div class="container">
-    <p class="contacts-subtitle">Connect</p>
+      <section class="section contacts-section" id="contacts">
+  <div class="container contacts-container">
+    <div class="contacts-header">
+      <p class="contacts-subtitle">Connect</p>
 
-    <h2 class="contacts-title">Order your unique jewelry</h2>
+      <h2 class="contacts-title">Order your unique jewelry</h2>
 
-    <!-- Contacts content. The form must have id="contacts-form" -->
+      <p class="contacts-description">
+        We'd love to hear more details from you!
+      </p>
+    </div>
+
+    <div class="contacts-content">
+      <ul class="contacts-list">
+        <li class="contacts-item contacts-item--email">
+          <a class="contacts-link" href="mailto:info@handmadejewelry.com">
+            <span class="contacts-icon-wrapper">
+              <svg
+                class="contacts-icon"
+                width="32"
+                height="32"
+                aria-hidden="true"
+              >
+                <use href="/project-F3A7K2Q9/assets/icons-QqV_eQbs.svg#envelope"></use>
+              </svg>
+            </span>
+
+            <span class="contacts-text-group">
+              <span class="contacts-type">Email</span>
+              <span class="contacts-value"> info@handmadejewelry.com </span>
+            </span>
+          </a>
+        </li>
+
+        <li class="contacts-item contacts-item--phone">
+          <a class="contacts-link" href="tel:+15550000000">
+            <span class="contacts-icon-wrapper">
+              <svg
+                class="contacts-icon"
+                width="32"
+                height="32"
+                aria-hidden="true"
+              >
+                <use href="/project-F3A7K2Q9/assets/icons-QqV_eQbs.svg#phone"></use>
+              </svg>
+            </span>
+
+            <span class="contacts-text-group">
+              <span class="contacts-type">Phone</span>
+              <span class="contacts-value">+1 (555) 000-0000</span>
+            </span>
+          </a>
+        </li>
+
+        <li class="contacts-item contacts-item--office">
+          <a
+            class="contacts-link"
+            href="https://www.google.com/maps/search/?api=1&query=76-8+Oakington+Manor+Dr,+London,+UK"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="contacts-icon-wrapper">
+              <svg
+                class="contacts-icon"
+                width="32"
+                height="32"
+                aria-hidden="true"
+              >
+                <use href="/project-F3A7K2Q9/assets/icons-QqV_eQbs.svg#map"></use>
+              </svg>
+            </span>
+
+            <span class="contacts-text-group">
+              <span class="contacts-type">Office</span>
+              <span class="contacts-value">
+                76-8 Oakington Manor Dr, London, UK
+              </span>
+            </span>
+          </a>
+        </li>
+      </ul>
+
+      <form
+        class="contacts-form"
+        id="contacts-form"
+        name="order_form"
+        autocomplete="off"
+      >
+        <div class="contacts-form-field">
+          <label class="contacts-form-label" for="user-name"> Name* </label>
+
+          <input
+            class="contacts-form-input"
+            type="text"
+            id="user-name"
+            name="user_name"
+            placeholder="Tony"
+            pattern="^[a-zA-Z\s\.]{5,28}$"
+            required
+          />
+        </div>
+
+        <div class="contacts-form-field">
+          <label class="contacts-form-label" for="user-phone"> Phone* </label>
+
+          <input
+            class="contacts-form-input"
+            type="tel"
+            id="user-phone"
+            name="user_phone"
+            placeholder="+1 234 567 8900"
+            pattern="^\+[0-9\s]{14}$"
+            required
+          />
+        </div>
+
+        <div class="contacts-form-field">
+          <label class="contacts-form-label" for="user-comment">
+            Describe what you want
+          </label>
+
+          <textarea
+            class="contacts-form-textarea"
+            id="user-comment"
+            name="user_comment"
+            placeholder="Type your message..."
+            maxlength="500"
+          ></textarea>
+        </div>
+
+        <button class="contacts-form-btn" type="submit">Submit</button>
+      </form>
+    </div>
   </div>
 </section>
+
     </main>
 
     <footer class="footer">
