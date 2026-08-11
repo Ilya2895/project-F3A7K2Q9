@@ -27,6 +27,10 @@
   pointer-events: auto;
 }
 
+body.menu-open {
+  overflow: hidden;
+}
+
 .mobile-menu-header {
   display: flex;
   align-items: center;

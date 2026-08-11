@@ -1,4 +1,12 @@
-<div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+<div
+  class="mobile-menu"
+  id="mobile-menu"
+  role="dialog"
+  aria-modal="true"
+  aria-label="Mobile navigation"
+  aria-hidden="true"
+  tabindex="-1"
+>
   <div class="mobile-menu-header">
     <a class="mobile-menu-logo" href="./index.html" aria-label="Home page">
       <svg class="mobile-menu-logo-icon" width="160" height="68">
@@ -12,7 +20,12 @@
       aria-label="Close mobile menu"
       data-menu-close
     >
-      <svg class="mobile-menu-close-icon" width="24" height="24">
+      <svg
+        class="mobile-menu-close-icon"
+        width="24"
+        height="24"
+        aria-hidden="true"
+      >
         <use href="./img/icons.svg#close"></use>
       </svg>
     </button>
