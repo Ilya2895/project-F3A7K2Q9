@@ -1,18 +1,19 @@
 .about {
     padding-top: 56px;
     padding-bottom: 56px;
-    width: 100%;
+    background-color: #ffffff;
 }
 
 .about-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
     gap: 32px;
 }
 
-.about-img {
+.about-image {
+    width: 100%;
+    height: calc(100vw - 40px);
+    max-height: 335px;
     object-fit: cover;
 }
 
@@ -23,100 +24,70 @@
 }
 
 .about-title {
-    color: #000000;
     font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: #000000;
 }
 
-.about-description {
-    color: #333333;
+.about-text {
     font-size: 18px;
-    line-height: 1.5;  
+    line-height: 1.5;
+    color: #000000;
 }
 
 .about-list {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 24px;
 }
 
 .about-item {
-    color: #000000;
     display: flex;
     align-items: center;
-    font-size: 18px;
-    font-weight: 700;
     gap: 8px;
 }
 
-.about-item-icon {
-    fill: none;
-    stroke: currentColor;
-    stroke-width: 0;
+.about-item-top {
+    align-items: flex-start;
+}
+
+.about-icon {
     flex-shrink: 0;
+    fill: currentColor;
 }
 
-@media screen and (min-width: 768px) {
+.about-feature {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #000000;
+}
+
+@media only screen and (min-width: 768px) {
     .about {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        flex-direction: column;
-        gap: 80px;
-        padding: 112px 32px;
+        padding-top: 112px;
+        padding-bottom: 112px;
     }
 
-    .about-container {
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        flex-direction: column;
-        gap: 32px;
-    }
-
-    .about-wrapper {
-        gap: 32px;
-        flex-basis: calc((100% - 32px) / 2);
-    }
-
-    .about-content {
-        gap: 24px;
-        flex-basis: calc((100% - 32px) / 2);
+    .about-image {
+        height: 456px;
+        max-height: none;
     }
 }
 
-@media screen and (min-width: 1440px) {
-    .about {
-        gap: 80px;
-        padding: 112px 64px;
-    }
-
+@media only screen and (min-width: 1440px) {
     .about-container {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
         flex-direction: row;
-        gap: 32px;
+        align-items: center;
     }
 
-    .about-wrapper {
-        gap: 32px;
-        flex-basis: calc((100% - 80px) / 2);
-    }
-
+    .about-image,
     .about-content {
-        gap: 24px;
-        flex-basis: calc((100% - 80px) / 2);
+        width: calc((100% - 32px) / 2);
     }
 
     .about-title {
         font-size: 48px;
-    }
-
-    .about-description {
-        font-size: 18px;
-    }
-
-    .about-item {
-        gap: 8px;
     }
 }
