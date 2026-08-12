@@ -23,7 +23,7 @@
     flex-direction: column;
     gap: 24px;
 
-    width: 335px;
+    width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -68,7 +68,7 @@
     flex-direction: column;
     gap: 24px;
 
-    width: 335px;
+    width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -93,7 +93,7 @@
     flex-direction: column;
     gap: 24px;
 
-    width: 335px;
+    width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -118,7 +118,7 @@
     flex-direction: column;
     gap: 24px;
 
-    width: 335px;
+    width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -147,7 +147,7 @@ START OF CARDS BLOCK
 
     border: 1px solid rgba(0, 0, 0, 0.2);
     height: 260px;
-    width: 335px;
+    width: 100%;
 }
 
 .testimonial-item.img {
@@ -157,8 +157,9 @@ START OF CARDS BLOCK
 }
 
 .testimonial-photo {
-    width: 335px;
+    width: 100%;
     height: 260px;
+    object-fit: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -223,7 +224,7 @@ END OF CARDS BLOCK
     flex-direction: column;
     gap: 24px;
 
-    width: 271px;
+    width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
