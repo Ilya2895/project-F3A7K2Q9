@@ -48,13 +48,33 @@
     gap: 8px;
 }
 
-.about-item-top {
-    align-items: flex-start;
+.about-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
 }
 
-.about-icon {
-    flex-shrink: 0;
-    fill: currentColor;
+.about-item::before {
+  content: '';
+  display: block;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.about-item-leaf::before {
+  background-image: url('../img/about-icons/leaf.svg');
+}
+
+.about-item-heart::before {
+  background-image: url('../img/about-icons/donate-heart.svg');
+}
+
+.about-item-book::before {
+  background-image: url('../img/about-icons/book.svg');
 }
 
 .about-feature {
