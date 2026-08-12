@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" type="image/svg+xml" href="/project-F3A7K2Q9/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
 
     <title>Handmade Jewelry</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,48 +22,118 @@
       referrerpolicy="no-referrer"
     />
     <script type="module" crossorigin src="/project-F3A7K2Q9/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-F3A7K2Q9/assets/index-q2iYBbqc.css">
+    <link rel="stylesheet" crossorigin href="/project-F3A7K2Q9/assets/index-9HWTnHyl.css">
   </head>
 
   <body>
     <header class="header" id="header">
   <div class="container">
-    <a
-      class="header-logo"
-      href="#header"
-    >
-      <svg
-        class="header-logo-icon"
-        width="160"
-        height="68"
-        aria-hidden="true"
-      >
+    <a class="header-logo" href="#header">
+      <svg class="header-logo-icon" width="160" height="68" aria-hidden="true">
         <use href="/project-F3A7K2Q9/assets/icons-QqV_eQbs.svg#logo"></use>
       </svg>
     </a>
-    <button class="header-menu-btn" type="button">
-      <svg class="header-menu-btn-icon" width="24" height="24">
+    <button
+      class="header-menu-btn"
+      type="button"
+      aria-label="Open mobile menu"
+      aria-controls="mobile-menu"
+      aria-expanded="false"
+      data-menu-open
+    >
+      <svg
+        class="header-menu-btn-icon"
+        width="24"
+        height="24"
+        aria-hidden="true"
+      >
         <use href="/project-F3A7K2Q9/assets/icons-QqV_eQbs.svg#menu"></use>
       </svg>
     </button>
     <nav class="header-nav">
       <ul class="header-nav-list">
-          <li><a class="header-nav-link" href="#about">About us</a></li>
-          <li><a class="header-nav-link" href="#benefits">Benefits</a></li>
-          <li><a class="header-nav-link" href="#gallery">Gallery</a></li>
-          <li><a class="header-nav-link" href="#testimonials">Testimonials</a></li>
-          <li><a class="header-nav-link" href="#contacts">Contacts</a></li>
+        <li>
+          <a class="header-nav-link animated-link" href="#about">About us</a>
+        </li>
+        <li>
+          <a class="header-nav-link animated-link" href="#benefits">Benefits</a>
+        </li>
+        <li>
+          <a class="header-nav-link animated-link" href="#gallery">Gallery</a>
+        </li>
+        <li>
+          <a class="header-nav-link animated-link" href="#testimonials"
+            >Testimonials</a
+          >
+        </li>
+        <li>
+          <a class="header-nav-link animated-link" href="#contacts">Contacts</a>
+        </li>
       </ul>
     </nav>
     <a href="#contacts" class="header-order-btn">Order Now</a>
   </div>
 </header>
 
-    <div class="mobile-menu" id="mobile-menu">
-  <div class="container">
-    <!-- Mobile menu content -->
+
+    <div
+  class="mobile-menu"
+  id="mobile-menu"
+  role="dialog"
+  aria-modal="true"
+  aria-label="Mobile navigation"
+  aria-hidden="true"
+  tabindex="-1"
+>
+  <div class="mobile-menu-header">
+    <a class="mobile-menu-logo" href="./index.html" aria-label="Home page">
+      <svg class="mobile-menu-logo-icon" width="160" height="68">
+        <use href="/project-F3A7K2Q9/assets/icons-QqV_eQbs.svg#logo"></use>
+      </svg>
+    </a>
+
+    <button
+      class="mobile-menu-close"
+      type="button"
+      aria-label="Close mobile menu"
+      data-menu-close
+    >
+      <svg
+        class="mobile-menu-close-icon"
+        width="24"
+        height="24"
+        aria-hidden="true"
+      >
+        <use href="/project-F3A7K2Q9/assets/icons-QqV_eQbs.svg#close"></use>
+      </svg>
+    </button>
+  </div>
+
+  <div class="mobile-menu-content">
+    <nav class="mobile-menu-navigation" aria-label="Mobile navigation">
+      <ul class="mobile-menu-list">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link animated-link" href="#about">About us</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link animated-link" href="#benefits">Benefits</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link animated-link" href="#gallery">Gallery</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link animated-link" href="#testimonials">Testimonials</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link animated-link" href="#contacts">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+
+    <a class="mobile-menu-order" href="#contacts">Order Now</a>
   </div>
 </div>
+
 
     <main>
       <section class="hero" id="hero">
@@ -579,23 +649,23 @@
       <nav class="footer-nav" aria-label="Footer navigation">
         <ul class="footer-nav-list">
           <li class="footer-nav-item">
-            <a class="footer-nav-link" href="#about">About us</a>
+            <a class="footer-nav-link animated-link" href="#about">About us</a>
           </li>
 
           <li class="footer-nav-item">
-            <a class="footer-nav-link" href="#benefits">Benefits</a>
+            <a class="footer-nav-link animated-link" href="#benefits">Benefits</a>
           </li>
 
           <li class="footer-nav-item">
-            <a class="footer-nav-link" href="#gallery">Gallery</a>
+            <a class="footer-nav-link animated-link" href="#gallery">Gallery</a>
           </li>
 
           <li class="footer-nav-item">
-            <a class="footer-nav-link" href="#testimonials">Testimonials</a>
+            <a class="footer-nav-link animated-link" href="#testimonials">Testimonials</a>
           </li>
 
           <li class="footer-nav-item">
-            <a class="footer-nav-link" href="#contacts">Contacts</a>
+            <a class="footer-nav-link animated-link" href="#contacts">Contacts</a>
           </li>
         </ul>
       </nav>
@@ -606,6 +676,7 @@
     </p>
   </div>
 </footer>
+
 
   </body>
 </html>
