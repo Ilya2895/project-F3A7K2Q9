@@ -23,7 +23,7 @@
     flex-direction: column;
     gap: 24px;
 
-    width: 335px;
+    width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -68,7 +68,7 @@
     flex-direction: column;
     gap: 24px;
 
-    width: 335px;
+    width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -93,7 +93,7 @@
     flex-direction: column;
     gap: 24px;
 
-    width: 335px;
+    width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -118,7 +118,7 @@
     flex-direction: column;
     gap: 24px;
 
-    width: 335px;
+    width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -146,8 +146,7 @@ START OF CARDS BLOCK
     flex-direction: column;
 
     border: 1px solid rgba(0, 0, 0, 0.2);
-    height: 260px;
-    width: 335px;
+    width: 100%;
 }
 
 .testimonial-item.img {
@@ -157,10 +156,14 @@ START OF CARDS BLOCK
 }
 
 .testimonial-photo {
-    width: 335px;
-    height: 260px;
-    background-position: center;
-    background-repeat: no-repeat;
+    display: block;
+    width: 100%;
+}
+
+.testimonial-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .testimonial-item.card {
@@ -175,17 +178,27 @@ START OF CARDS BLOCK
 
 @media only screen and (max-width: 767.98px) {
     .testimonial-item.card {
-        height: 214px;
+        min-height: 214px;
     }
 }
 
 @media only screen and (min-width: 768px) {
+    .testimonial-item {
+        height: 260px;
+    }
+
     .testimonial-item.img {
         width: 203px;
     }
 
     .testimonial-photo {
         width: 203px;
+        height: 260px;
+    }
+
+    .testimonial-photo img {
+        height: 100%;
+        object-fit: cover;
     }
 
     .testimonial-item.card {
@@ -223,7 +236,7 @@ END OF CARDS BLOCK
     flex-direction: column;
     gap: 24px;
 
-    width: 271px;
+    width: 100%;
 }
 
 @media only screen and (min-width: 768px) {

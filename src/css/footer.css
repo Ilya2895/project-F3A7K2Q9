@@ -62,12 +62,6 @@
   text-decoration: none;
 }
 
-.footer-nav-link:hover,
-.footer-nav-link:focus {
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
 .footer-logo:focus-visible,
 .footer-social-link:focus-visible,
 .footer-nav-link:focus-visible {
