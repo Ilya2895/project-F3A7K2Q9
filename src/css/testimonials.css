@@ -146,7 +146,6 @@ START OF CARDS BLOCK
     flex-direction: column;
 
     border: 1px solid rgba(0, 0, 0, 0.2);
-    height: 260px;
     width: 100%;
 }
 
@@ -159,17 +158,12 @@ START OF CARDS BLOCK
 .testimonial-photo {
     display: block;
     width: 100%;
-    height: 260px;
-    object-fit: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .testimonial-photo img {
     display: block;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
 }
 
 .testimonial-item.card {
@@ -184,17 +178,27 @@ START OF CARDS BLOCK
 
 @media only screen and (max-width: 767.98px) {
     .testimonial-item.card {
-        height: 214px;
+        min-height: 214px;
     }
 }
 
 @media only screen and (min-width: 768px) {
+    .testimonial-item {
+        height: 260px;
+    }
+
     .testimonial-item.img {
         width: 203px;
     }
 
     .testimonial-photo {
         width: 203px;
+        height: 260px;
+    }
+
+    .testimonial-photo img {
+        height: 100%;
+        object-fit: cover;
     }
 
     .testimonial-item.card {
