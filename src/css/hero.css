@@ -1,15 +1,15 @@
 .hero {
 width: 100%;
-max-width: 375px;
-min-height: 656px;
+max-width: 1440px;
+min-height: clamp(560px, 174.93vw, 656px);
 margin: 0 auto;
-padding: 160px 20px 0;
+padding: clamp(120px, 42.67vw, 160px) 20px 40px;
 
 background-color: #808080;
 background-image: url('../img/hero-background/1x-mobile.avif');
 background-repeat: no-repeat;
 background-position: center;
-background-size: 375px 656px;
+background-size: cover;
 }
 
 .hero-content {
@@ -81,12 +81,11 @@ border-color: #CCC16E;
 
 @media screen and (min-width: 768px) {
 .hero {
-max-width: 768px;
 min-height: 864px;
 padding: 160px 32px 0;
 
 background-image: url('../img/hero-background/1x-tab.avif');
-background-size: 768px 864px;
+background-size: cover;
 }
 
 .hero-content {
@@ -108,7 +107,6 @@ background-image: url('../img/hero-background/2x-tab.avif');
 
 @media screen and (min-width: 1440px) {
 .hero {
-max-width: 1440px;
 min-height: 864px;
 padding: 224px 64px 0;
 
